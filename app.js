@@ -896,11 +896,11 @@ function renderObservation() {
             <form id="obsForm" onsubmit="submitObservation(event)" style="display: flex; flex-direction: column; gap: 1rem;">
                 
                 <div style="display: flex; flex-wrap: wrap; gap: 1.25rem;">
-                    <div style="flex: 1 1 200px; min-width: 0;">
+                    <div style="flex: 1 1 180px; min-width: 0;">
                         <label class="list-label" style="display:block; margin-bottom:0.4rem;">Date of Visit *</label>
                         <input type="date" id="obsDate" class="ui-input" value="${today}" required style="width: 100%; display: block; box-sizing: border-box; min-width: 0; padding: 0.75rem;">
                     </div>
-                    <div style="flex: 1 1 200px; min-width: 0;">
+                    <div style="flex: 1 1 180px; min-width: 0;">
                         <label class="list-label" style="display:block; margin-bottom:0.4rem;">Shift *</label>
                         <select id="obsShift" class="ui-input" required style="width: 100%; display: block; box-sizing: border-box; min-width: 0; padding: 0.75rem;">
                             <option value="" disabled selected>Select Shift</option>
