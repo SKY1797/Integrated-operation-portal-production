@@ -897,7 +897,7 @@ function renderObservation() {
                 
                 <div>
                     <label class="list-label" style="display:block; margin-bottom:0.4rem;">Date of Visit *</label>
-                    <input type="text" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'" id="obsDate" class="ui-input" value="${today}" required style="width: 100%; box-sizing: border-box; display: block; padding: 0.75rem;">
+                    <input type="date" id="obsDate" class="ui-input" value="${today}" required style="width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; margin: 0 !important; -webkit-appearance: none; appearance: none;">
                 </div>
                 
                 <div>
