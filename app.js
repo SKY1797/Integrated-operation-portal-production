@@ -37,6 +37,8 @@ const iconGear = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" st
 const iconCalendar = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>`;
 const iconWalkdown = `<svg width="25" height="25" viewBox="0 0 25 25" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="5" r="1"/><path d="M15 20L14 17L11 14M11 14L12 9M11 14L8 20M12 9L15 12L17 13M12 9L9 11L8 14"/></svg>`;
 const iconLogout = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 12L17 12"/><path d="M14.5 9L17 12"/><path d="M14.5 15L17 12"/><path d="M17 17C17 19.2091 15.2091 20 13 20H10C7.79086 20 6 18.2091 6 16V8C6 5.79086 7.79086 4 10 4H13C15.2091 4 17 4.79086 17 7"/></svg>`;
+const iconLeave = `<svg width="22" height="22" viewBox="0 0 36 36" fill="currentColor"><path d="M18.08,2.34c-8.82,0-16,6.28-16,14s7.18,14,16,14A17.91,17.91,0,0,0,23,29.66l5.53,3.52a1,1,0,0,0,1.38-.3,1,1,0,0,0,.16-.54V25.61a13,13,0,0,0,4-9.27C34.08,8.62,26.9,2.34,18.08,2.34ZM28.37,24.45a1,1,0,0,0-.32.73v5.34l-4.38-2.79a1,1,0,0,0-.83-.11,16,16,0,0,1-4.76.72c-7.72,0-14-5.38-14-12s6.28-12,14-12,14,5.38,14,12A11.1,11.1,0,0,1,28.37,24.45Z"/><path d="M31.1,15.82,31,15.67,28.5,13.44a3.25,3.25,0,0,0-2.39-.84l-5.38.34-3.59-3a.81.81,0,0,0-.52-.19H13.56a.78.78,0,0,0-.69.4.77.77,0,0,0,0,.79l1.36,2.44-4.71.29,1.31,1.52,15.39-1a1.65,1.65,0,0,1,1.22.43l2.36,2.13a.11.11,0,0,1,0,.07c0,.06-.09.05-.1.06H21.82l-.35.37-5.19,5.53H14.64l2.73-5.9H8.54L7.13,14.16,6.51,13a.8.8,0,0,0-1-.2A.81.81,0,0,0,5.2,13.9l2,3.94a1.21,1.21,0,0,0,1.08.65h6.57l-1.94,4.18A1.2,1.2,0,0,0,13,23.83a1.22,1.22,0,0,0,1,.56h2.43a1.17,1.17,0,0,0,.88-.39l5.18-5.51h7.16a1.65,1.65,0,0,0,1.52-.91A1.74,1.74,0,0,0,31.1,15.82ZM14.92,11.31h1.41l2.09,1.77L16,13.23Z"/></svg>`;
+const iconPerformance = `<svg width="22" height="22" viewBox="0 0 32 32" fill="currentColor"><path d="M8,10.5L8,10.5C8,10.224,8.224,10,8.5,10h3c0.276,0,0.5,0.224,0.5,0.5v0c0,0.276-0.224,0.5-0.5,0.5h-3 C8.224,11,8,10.776,8,10.5z M8.5,13h3c0.276,0,0.5-0.224,0.5-0.5v0c0-0.276-0.224-0.5-0.5-0.5h-3C8.224,12,8,12.224,8,12.5v0 C8,12.776,8.224,13,8.5,13z M30,8v18c0,1.657-1.343,3-3,3H5c-1.657,0-3-1.343-3-3V8c0-1.657,1.343-3,3-3c0,0,0.448-1,1-1h3.092 C9.299,3.419,9.849,3,10.5,3s1.201,0.419,1.408,1H14c0.552,0,1,0.448,1,1h12C28.657,5,30,6.343,30,8z M6,15h8V5h-2v2.5 c0,0.892-0.783,1.605-1.697,1.487C9.547,8.89,9,8.21,9,7.448V7.25c0-0.276,0.224-0.5,0.5-0.5h0c0.276,0,0.5,0.224,0.5,0.5V7.5 c0,0.303,0.271,0.544,0.584,0.493C10.83,7.953,11,7.721,11,7.472L11,5H6V15z M28.976,26.242C28.447,26.708,27.76,27,27,27H5 c-0.76,0-1.447-0.292-1.976-0.758C3.145,27.231,3.978,28,5,28h22C28.022,28,28.855,27.231,28.976,26.242z M29,8c0-1.105-0.895-2-2-2 H15v9c0,0.552-0.448,1-1,1H6c-0.552,0-1-0.448-1-1l0-9C3.895,6,3,6.895,3,8v16c0,1.105,0.895,2,2,2h22c1.105,0,2-0.895,2-2V8z M26.691,14.038C26.63,14.013,26.565,14,26.5,14h-4c-0.276,0-0.5,0.224-0.5,0.5s0.224,0.5,0.5,0.5h2.793l-3,3h-1.586l-1.854-1.854 c-0.195-0.195-0.512-0.195-0.707,0L15.293,19H11.5c-0.133,0-0.26,0.053-0.354,0.146L8.293,22H5.5C5.224,22,5,22.224,5,22.5 S5.224,23,5.5,23h3c0.133,0,0.26-0.053,0.354-0.146L11.707,20H15.5c0.133,0,0.26-0.053,0.354-0.146l2.646-2.646l1.646,1.646 C20.24,18.947,20.367,19,20.5,19h2c0.133,0,0.26-0.053,0.354-0.146L26,15.707V18.5c0,0.276,0.224,0.5,0.5,0.5s0.5-0.224,0.5-0.5v-4 c0-0.065-0.013-0.13-0.038-0.191C26.911,14.187,26.813,14.089,26.691,14.038z"/></svg>`;
 
 document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('popstate', handlePopState);
@@ -133,6 +135,8 @@ function updateHeader() {
         if (appState.module === 'DOCS' && appState.docsPath.length > 0) backAction = "docsGoBack()";
         if (appState.module === 'ROTA') backAction = "updateState({module: 'HOME'})";
         if (appState.module === 'OBSERVATION') backAction = "updateState({module: 'HOME'})";
+        if (appState.module === 'LEAVE') backAction = "updateState({module: 'HOME'})";
+        if (appState.module === 'PERFORMANCE') backAction = "updateState({module: 'HOME'})";
 
         const homeAction = "updateState({module: 'HOME', docsPath: [], protectionArea: null, protectionEquip: null, electricalUnit: null})";
 
@@ -153,6 +157,12 @@ function updateHeader() {
         } else if (appState.module === 'ROTA') {
             const moduleAction = "updateState({module: 'ROTA'})";
             moduleBtnHTML = `<button class="nav-pill-btn" onclick="${moduleAction}">${iconCalendar} <span class="nav-text">Shift Rota</span></button>`;
+        } else if (appState.module === 'LEAVE') {
+            const moduleAction = "updateState({module: 'LEAVE'})";
+            moduleBtnHTML = `<button class="nav-pill-btn" onclick="${moduleAction}">${iconLeave} <span class="nav-text">Leave Planner</span></button>`;
+        } else if (appState.module === 'PERFORMANCE') {
+            const moduleAction = "updateState({module: 'PERFORMANCE'})";
+            moduleBtnHTML = `<button class="nav-pill-btn" onclick="${moduleAction}">${iconPerformance} <span class="nav-text">Performance Report</span></button>`;
         }
 
         const backBtnHTML = `<button class="nav-pill-btn" onclick="${backAction}">${iconBack} <span class="nav-text">Back</span></button>`;
@@ -184,6 +194,8 @@ function renderApp() {
         case 'DOCS': container.innerHTML = renderDocs(); setupDocsSearch(); break;
         case 'ROTA': container.innerHTML = renderRota(); new CalendarApp(); break;
         case 'OBSERVATION': container.innerHTML = renderObservation(); break;
+        case 'LEAVE': container.innerHTML = renderPlaceholder('Leave Planner', 'Manage team leaves'); break;
+        case 'PERFORMANCE': container.innerHTML = renderPlaceholder('Performance Report', 'Operation metrics'); break;
     }
 }
 
@@ -246,6 +258,43 @@ function renderHome() {
                 </div>
                 <div class="card-desc" style="margin-top:0;">Add your local area (Boiler , Turbine , Offsite , Ele. Switchgear) walkdown observations</div>
             </button>
+            <button class="ui-card" style="flex-direction: column; align-items: normal;" onclick="updateState({module: 'LEAVE'})">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem;">
+                    <div class="card-icon-box" style="background: color-mix(in srgb, var(--module-rota) 15%, var(--card)); color: var(--module-rota); flex-shrink: 0; width: 2.5rem; height: 2.5rem;">${iconLeave}</div>
+                    <div style="display: flex; flex-direction: column;">
+                        <span class="card-title font-mono">Leave Planner</span>
+                        <span class="card-subtitle" style="margin-top:0.1rem;">Manage team leaves</span>
+                    </div>
+                </div>
+                <div class="card-desc" style="margin-top:0;">Plan, track and manage operation team's leaves and availability schedule</div>
+            </button>
+            <button class="ui-card" style="flex-direction: column; align-items: normal;" onclick="updateState({module: 'PERFORMANCE'})">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem;">
+                    <div class="card-icon-box" style="background: color-mix(in srgb, var(--module-docs) 15%, var(--card)); color: var(--module-docs); flex-shrink: 0; width: 2.5rem; height: 2.5rem;">${iconPerformance}</div>
+                    <div style="display: flex; flex-direction: column;">
+                        <span class="card-title font-mono">Operation Performance Data</span>
+                        <span class="card-subtitle" style="margin-top:0.1rem;">Data visualization and reports</span>
+                    </div>
+                </div>
+                <div class="card-desc" style="margin-top:0;">Access key operational performance indicators, generation reports and historic performance data</div>
+            </button>
+        </div>
+    `;
+}
+
+// --------------------------------- PLACEHOLDER MODULES ---------------------------------
+function renderPlaceholder(title, subtitle) {
+    return `
+        <div class="page-head">
+            <h2 class="page-title font-mono">${title}</h2>
+            <p class="page-subtitle">${subtitle}</p>
+        </div>
+        <div class="ui-card" style="padding: 3rem 1rem; text-align: center; color: var(--muted-foreground); margin-top: 1rem; cursor: default;">
+            <div style="margin-bottom: 1rem; opacity: 0.5;">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="font-mono" style="color: var(--foreground); margin-bottom: 0.5rem; font-size: 1.25rem;">Module in Development</h3>
+            <p>This module will be available in a future update.</p>
         </div>
     `;
 }
