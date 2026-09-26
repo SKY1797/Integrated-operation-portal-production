@@ -260,7 +260,7 @@ function renderHome() {
             </button>
             <button class="ui-card" style="flex-direction: column; align-items: normal;" onclick="updateState({module: 'LEAVE'})">
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem;">
-                    <div class="card-icon-box" style="background: color-mix(in srgb, var(--module-rota) 15%, var(--card)); color: var(--module-rota); flex-shrink: 0; width: 2.5rem; height: 2.5rem;">${iconLeave}</div>
+                    <div class="card-icon-box" style="background: color-mix(in srgb, var(--module-protection) 15%, var(--card)); color: var(--module-protection); flex-shrink: 0; width: 2.5rem; height: 2.5rem;">${iconLeave}</div>
                     <div style="display: flex; flex-direction: column;">
                         <span class="card-title font-mono">Leave Planner</span>
                         <span class="card-subtitle" style="margin-top:0.1rem;">Manage team leaves</span>
@@ -272,8 +272,8 @@ function renderHome() {
                 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.75rem;">
                     <div class="card-icon-box" style="background: color-mix(in srgb, var(--module-docs) 15%, var(--card)); color: var(--module-docs); flex-shrink: 0; width: 2.5rem; height: 2.5rem;">${iconPerformance}</div>
                     <div style="display: flex; flex-direction: column;">
-                        <span class="card-title font-mono">Operation Performance Data</span>
-                        <span class="card-subtitle" style="margin-top:0.1rem;">Data visualization and reports</span>
+                        <span class="card-title font-mono">Operation Deshboard</span>
+                        <span class="card-subtitle" style="margin-top:0.1rem;">Performance Data visualization</span>
                     </div>
                 </div>
                 <div class="card-desc" style="margin-top:0;">Access operational performance indicators, generation reports & historic performance data</div>
