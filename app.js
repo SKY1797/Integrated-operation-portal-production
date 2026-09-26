@@ -898,7 +898,7 @@ function renderObservation() {
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem;">
                     <div>
                         <label class="list-label" style="display:block; margin-bottom:0.4rem;">Date of Visit *</label>
-                        <input type="date" id="obsDate" class="ui-input" value="${today}" required style="width: 100%; padding: 0.75rem;">
+                        <input type="date" id="obsDate" class="ui-input" value="${today}" required style="width: 100%; box-sizing: border-box; max-width: 100%; padding: 0.75rem;">
                     </div>
                     <div>
                         <label class="list-label" style="display:block; margin-bottom:0.4rem;">Shift *</label>
