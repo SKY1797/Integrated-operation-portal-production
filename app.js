@@ -896,11 +896,11 @@ function renderObservation() {
             <form id="obsForm" onsubmit="submitObservation(event)" style="display: flex; flex-direction: column; gap: 1rem;">
                 
                 <div style="display: flex; flex-wrap: wrap; gap: 1.25rem;">
-                    <div style="flex: 1 1 180px; min-width: 0;">
+                    <div style="flex: 1 1 150px; min-width: 0;">
                         <label class="list-label" style="display:block; margin-bottom:0.4rem;">Date of Visit *</label>
                         <input type="date" id="obsDate" class="ui-input" value="${today}" required style="width: 100%; display: block; box-sizing: border-box; min-width: 0; padding: 0.75rem;">
                     </div>
-                    <div style="flex: 1 1 180px; min-width: 0;">
+                    <div style="flex: 1 1 150px; min-width: 0;">
                         <label class="list-label" style="display:block; margin-bottom:0.4rem;">Shift *</label>
                         <select id="obsShift" class="ui-input" required style="width: 100%; display: block; box-sizing: border-box; min-width: 0; padding: 0.75rem;">
                             <option value="" disabled selected>Select Shift</option>
@@ -916,11 +916,18 @@ function renderObservation() {
                     <label class="list-label" style="display:block; margin-bottom:0.4rem;">Area Visited *</label>
                     <select id="obsArea" class="ui-input" required style="width: 100%; padding: 0.75rem;">
                         <option value="" disabled selected>Select Area</option>
-                        <option value="Boiler">Boiler</option>
-                        <option value="Turbine">Turbine</option>
+                        <option value="Unit-1 Boiler">Unit-1 Boiler</option>
+                        <option value="Unit-2 Boiler">Unit-2 Boiler</option>
+                        <option value="Unit-1 Turbine">Unit-1 Turbine</option>
+                        <option value="Unit-2 Turbine">Unit-2 Turbine</option>
                         <option value="Offsite">Offsite</option>
                         <option value="Ele. Switchgear">Ele. Switchgear</option>
                     </select>
+                </div>
+
+                <div>
+                    <label class="list-label" style="display:block; margin-bottom:0.4rem;">Sub Area / Exact Location *</label>
+                    <textarea id="obsSubArea" class="ui-input" rows="2" required style="width: 100%; resize: vertical; padding: 0.75rem;" placeholder="Turbine 8.5M, Boiler 0M, Unit 1 12.5M switchgear, CW pumphouse ..."></textarea>
                 </div>
 
                 <div>
@@ -969,14 +976,17 @@ window.submitObservation = async function (e) {
     // Get Active User
     const userId = localStorage.getItem('opsPortalUser');
     const userName = (userId && empData[userId]) ? empData[userId].name : 'Unknown';
+    const userGroup = (userId && empData[userId] && empData[userId].group) ? empData[userId].group : 'N/A';
 
     // Bundle Data
     const payload = {
         empId: userId,
         empName: userName,
+        group: userGroup,
         visitDate: document.getElementById('obsDate').value,
         shift: document.getElementById('obsShift').value,
         areaVisited: document.getElementById('obsArea').value,
+        subArea: document.getElementById('obsSubArea').value,
         equipmentIssue: document.getElementById('obsEquip').value,
         leakages: document.getElementById('obsLeak').value,
         lightingIssue: document.getElementById('obsLight').value,
@@ -985,7 +995,7 @@ window.submitObservation = async function (e) {
     };
 
     // PASTE YOUR GOOGLE APPS SCRIPT WEB APP URL HERE:
-    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbyycvEIC0d7swnAqGDJp0LT-Qpdw6hhfiklXDEdewGmMavPkrf0UjA7ztadEDWTAqoT/exec';
+    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwHd7yjeAiL8aQN-4e1uQ-omzFENJRU_-c2-QrbRuzcQHDj0rKmUhcAgr-DYaCqutCG/exec';
 
     try {
         const response = await fetch(WEB_APP_URL, {
