@@ -895,14 +895,14 @@ function renderObservation() {
         <div class="ui-card" style="display: block; cursor: default; padding: 1.1rem;">
             <form id="obsForm" onsubmit="submitObservation(event)" style="display: flex; flex-direction: column; gap: 1rem;">
                 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem;">
-                    <div>
+                <div style="display: flex; flex-wrap: wrap; gap: 1.25rem;">
+                    <div style="flex: 1 1 200px; min-width: 0;">
                         <label class="list-label" style="display:block; margin-bottom:0.4rem;">Date of Visit *</label>
-                        <input type="date" id="obsDate" class="ui-input" value="${today}" required style="width: 100%; box-sizing: border-box; max-width: 100%; padding: 0.75rem;">
+                        <input type="date" id="obsDate" class="ui-input" value="${today}" required style="width: 100%; display: block; box-sizing: border-box; min-width: 0; padding: 0.75rem;">
                     </div>
-                    <div>
+                    <div style="flex: 1 1 200px; min-width: 0;">
                         <label class="list-label" style="display:block; margin-bottom:0.4rem;">Shift *</label>
-                        <select id="obsShift" class="ui-input" required style="width: 100%; padding: 0.75rem;">
+                        <select id="obsShift" class="ui-input" required style="width: 100%; display: block; box-sizing: border-box; min-width: 0; padding: 0.75rem;">
                             <option value="" disabled selected>Select Shift</option>
                             <option value="Morning">Morning</option>
                             <option value="Evening">Evening</option>
