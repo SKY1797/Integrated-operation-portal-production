@@ -1043,7 +1043,7 @@ window.submitObservation = async function (e) {
     };
 
     // PASTE YOUR GOOGLE APPS SCRIPT WEB APP URL HERE:
-    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwHd7yjeAiL8aQN-4e1uQ-omzFENJRU_-c2-QrbRuzcQHDj0rKmUhcAgr-DYaCqutCG/exec';
+    const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbx2OaHtCtmMbr-Xu42BmpBdeIfjL43AkiZiytDyuVv_hpTkfgeY8XKYfORNPfXOSe0j/exec';
 
     try {
         const response = await fetch(WEB_APP_URL, {
